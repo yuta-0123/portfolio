@@ -564,13 +564,13 @@ button:focus {
         8.CONTACT
 ===========================*/
 
-#formWrapper .form-control {
+.contact_form .form-control {
     box-shadow: none !important;
     height: 50px;
     border: 2px solid #e0e0e0;
 }
 
-#formWrapper textarea.form-control {
+.contact_form textarea.form-control {
     height: auto;
 }
 

@@ -1,30 +1,19 @@
-/*-----------------------------------------------------------
-* Template Name    : Kerri | Responsive Bootstrap 4 Personal Template
-* Author           : SRBThemes
-* Version          : 1.0.0
-* Created          : March 2018
-* File Description : Main css file of the template
-*------------------------------------------------------------
-*/
-
-
 /***********************
-    1.BASIC
-    2.HELPER
-    3.NAVBAR
-    4.HOME
-    5.ABOUT 
-    6.SERVICES
-    7.WORK
-    8.CONTACT
-    9.FOOTER
-    10.RESPONSIVE
+    BASIC
+    HELPER
+    NAVBAR
+    HOME
+    ABOUT 
+    WORKS
+    PORTFOLIO
+    FOOTER
+    RESPONSIVE
 ************************/
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
 
 /*======================
-        1.BASIC
+        BASIC
 ========================*/
 
 body {
@@ -66,7 +55,7 @@ button:focus {
     right: 0;
     bottom: 0;
     background-color: #fff;
-    z-index: 9999999;
+    z-index: 10;
 }
 
 #status {
@@ -130,7 +119,7 @@ button:focus {
     height: 35px;
     width: 35px;
     display: none;
-    z-index: 10000;
+    z-index: 9;
     border-radius: 3px;
     right: 20px;
     transition: all 0.5s;
@@ -145,7 +134,7 @@ button:focus {
 
 
 /*==========================
-        2.HELPER
+        HELPER
 ============================*/
 
 .section {
@@ -159,16 +148,8 @@ button:focus {
     height: 100vh;
 }
 
-.z-index {
-    z-index: 2;
-}
-
 .clippath_none {
     clip-path: none !important;
-}
-
-.section-subtitle {
-    max-width: 500px;
 }
 
 .btn {
@@ -232,7 +213,7 @@ button:focus {
 
 
 /*==========================
-        3.NAVBAR CUSTOM
+      NAVBAR CUSTOM
 ============================*/
 
 .custom-nav {
@@ -240,9 +221,13 @@ button:focus {
     padding: 20px 0px;
     width: 100%;
     border-radius: 0px;
-    z-index: 999;
+    z-index: 8;
     margin-bottom: 0px;
     transition: all 0.5s ease-in-out;
+}
+
+.custom-nav .container {
+    max-width: 98%;
 }
 
 .custom-nav .navbar-nav li a {
@@ -300,7 +285,7 @@ button:focus {
 
 
 /*===========================
-        4.HOME
+        HOME
 =============================*/
 
 .header-bg-img {
@@ -342,7 +327,7 @@ button:focus {
     text-align: center;
     color: #fff;
     font-size: 13px;
-    z-index: 8;
+    z-index: 7;
 }
 
 .scroll_down i {
@@ -406,7 +391,7 @@ button:focus {
 }
 
 /*===========================
-        5.ABOUT
+        ABOUT
 =============================*/
 
 
@@ -423,9 +408,25 @@ button:focus {
     text-align: center;
 }
 
+.section-subtitle {
+    font-size: 25px;
+}
+
+.reason {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#about .description {
+    line-height: 40px;
+}
+
+#about .description .pink {
+    color: #e65f78;
+}
 
 /*===========================
-        6.SERVICES
+        Works
 =============================*/
 
 .services-boxes {
@@ -465,10 +466,30 @@ button:focus {
     font-size: 15px;
 }
 
+table {
+    margin: 30px auto;
+}
+
+table tr {
+    line-height: 30px;
+    text-align: left;
+   
+}
+table th {
+    font-size: 16px;
+    font-weight: normal;
+    padding-right: 28px;
+
+}
+table td {
+    padding-left: 28px;
+    color:  #e65f78;
+}
+
 
 
 /*===========================
-        7.WORK
+        portfolio
 =============================*/
 
 .work_menu li a {
@@ -560,55 +581,8 @@ button:focus {
 }
 
 
-/*=========================
-        8.CONTACT
-===========================*/
-
-.contact_form .form-control {
-    box-shadow: none !important;
-    height: 50px;
-    border: 2px solid #e0e0e0;
-}
-
-.contact_form textarea.form-control {
-    height: auto;
-}
-
-.contact_detail-title {
-    font-size: 18px;
-}
-
-.error {
-    margin: 8px 0px;
-    display: none;
-    color: #ec5f79;
-}
-
-.error_msg {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 18px;
-    color: #ec5f79;
-    font-weight: 700;
-}
-
-.gig_loader {
-    display: none;
-}
-
-#success_msg {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#success_msg h3 {
-    color: #64d674;
-    font-size: 22px;
-}
-
-
 /*======================
-        9.FOOTER
+        FOOTER
 ========================*/
 
 .footer {
@@ -632,9 +606,8 @@ button:focus {
     text-align: center;
 }
 
-
 /*===========================
-        10.RESPONSIVE
+        RESPONSIVE
 =============================*/
 
 @media (min-width: 200px) and (max-width: 768px) {
@@ -655,6 +628,8 @@ button:focus {
     }
     .custom-nav .navbar-nav li a {
         color: rgba(0, 0, 0, 0.6) !important;
+        text-align: center;
+        line-height: 18px;
     }
     .custom-nav .logo .logo-light {
         display: none;

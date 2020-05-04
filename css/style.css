@@ -586,6 +586,14 @@ table td {
     transform: scale(1.05);
 }
 
+#portfolio .description {
+    padding-top: 50px;
+}
+
+#portfolio .description h5 {
+    font-size: 20px;
+}
+
 
 /*======================
         FOOTER

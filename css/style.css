@@ -721,6 +721,10 @@ table td {
         padding-top: 20px;
     }
 
+    #about table tr:first-child th {
+        padding-top: 0;
+    }
+
     #about table td {
         display: block;
         width: 100%;

@@ -132,6 +132,26 @@ button:focus {
     display: block;
 }
 
+table {
+    margin: 30px auto;
+}
+
+table tr {
+    line-height: 30px;
+    text-align: left;
+   
+}
+table th {
+    font-size: 16px;
+    font-weight: normal;
+    padding-right: 28px;
+
+}
+table td {
+    padding-left: 28px;
+    color:  #e65f78;
+}
+
 
 /*==========================
         HELPER
@@ -431,6 +451,18 @@ button:focus {
     display: block;
 }
 
+#about table {
+    margin: 0;
+}
+
+#about table th {
+    padding: 0;
+    text-align: left;
+}
+
+#about table td {
+    text-align: left;
+}
 
 
 /*===========================
@@ -474,22 +506,22 @@ button:focus {
     font-size: 15px;
 }
 
-table {
+#about table {
     margin: 30px auto;
 }
 
-table tr {
+#about table tr {
     line-height: 30px;
     text-align: left;
    
 }
-table th {
+#about table th {
     font-size: 16px;
     font-weight: normal;
     padding-right: 28px;
 
 }
-table td {
+#about table td {
     padding-left: 28px;
     color:  #e65f78;
 }
@@ -677,6 +709,37 @@ table td {
     }
     .clip-home{
         clip-path: none;
+    }
+
+    #about table {
+        margin-top: 0;
+    }
+
+    #about table th {
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    #about table td {
+        display: block;
+        width: 100%;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    #portfolio table th {
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    #portfolio table td {
+        display: block;
+        width: 100%;
+        padding: 0;
+        text-align: center;
     }
 }
 
